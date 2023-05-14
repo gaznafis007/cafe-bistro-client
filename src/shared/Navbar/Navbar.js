@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+  //   const handleLogOut = ()
   const items = (
     <>
       <li>
@@ -53,17 +54,17 @@ const Navbar = () => {
       <div className="navbar-end">
         {user?.uid ? (
           <>
-            <Link to="/" className="btn bg-amber-950">
+            <p className="text-amber-950 mr-2">{user?.displayName}</p>
+            <button onClick={logOut} className="btn bg-amber-950">
               Logout
-            </Link>
-            <p className="text-amber-950">{user?.displayName}</p>
+            </button>
           </>
         ) : (
           <>
-            <Link to="/" className="btn mr-2 bg-amber-950">
+            <Link to="/login" className="btn mr-2 bg-amber-950">
               Login
             </Link>
-            <Link to="/" className="btn bg-amber-950">
+            <Link to="/signup" className="btn bg-amber-950">
               Sign up
             </Link>
           </>
