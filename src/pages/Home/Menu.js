@@ -5,7 +5,7 @@ import Card from "./Card";
 const Menu = () => {
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/shortmenu")
+    fetch("https://cafe-bistro-server.vercel.app/shortmenu")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

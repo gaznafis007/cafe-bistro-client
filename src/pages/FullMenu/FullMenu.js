@@ -4,7 +4,7 @@ import CardItem from "./CardItem";
 const FullMenu = () => {
   const [fullItems, setFullItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/menu")
+    fetch("https://cafe-bistro-server.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => {
         console.log();

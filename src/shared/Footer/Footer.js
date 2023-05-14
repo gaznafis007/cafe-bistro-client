@@ -18,7 +18,7 @@ const Footer = () => {
         <p className="text-amber-950">
           <span className="font-semibold">cafe-BISTRO</span>
           <br />
-          Providing reliable tech since 1992
+          Providing taste since 1992
         </p>
       </div>
       <div className="text-amber-950">
