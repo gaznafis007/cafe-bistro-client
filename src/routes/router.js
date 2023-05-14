@@ -1,6 +1,7 @@
 import FullMenu from "../pages/FullMenu/FullMenu";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
+import PrivateRoute from "../pages/Private/PrivateRoute";
 import Signup from "../pages/Signup/Signup";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/menu",
-        element: <FullMenu />,
+        element: (
+          <PrivateRoute>
+            <FullMenu />
+          </PrivateRoute>
+        ),
       },
     ],
   },

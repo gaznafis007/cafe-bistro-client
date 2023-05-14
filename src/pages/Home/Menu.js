@@ -15,7 +15,7 @@ const Menu = () => {
   return (
     <div className="my-4">
       <h2 className="text-5xl text-amber-950 text-center font-bold">Menu</h2>
-      <div className="grid grid-cols-3 mx-8 gap-4">
+      <div className="grid grid-cols-3 mx-8 mt-4 gap-4">
         {items.map((item) => (
           <Card key={item._id} item={item}></Card>
         ))}

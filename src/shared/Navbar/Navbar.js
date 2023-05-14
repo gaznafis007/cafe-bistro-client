@@ -8,9 +8,8 @@ const Navbar = () => {
   const items = (
     <>
       <li>
+        <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
-        <Link to="/">About</Link>
-        <Link to="/">Contact</Link>
       </li>
     </>
   );
