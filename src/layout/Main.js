@@ -1,11 +1,14 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "../shared/Footer/Footer";
+import Navbar from "../shared/Navbar/Navbar";
 
 const Main = () => {
   return (
-    <div>
-      <p className="text-6xl font-semibold text-purple-700">
-        this is main layout
-      </p>
+    <div className="font-serif">
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };
