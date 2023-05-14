@@ -1,3 +1,4 @@
+import FullMenu from "../pages/FullMenu/FullMenu";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Signup from "../pages/Signup/Signup";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/menu",
+        element: <FullMenu />,
       },
     ],
   },
